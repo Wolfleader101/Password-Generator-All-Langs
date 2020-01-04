@@ -6,9 +6,7 @@
 
 //using namespace std;
 
-static const char characters[] = 
-"qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM1234567890`~!@#$%^&*()_+{}|\;:,<.>/?"; //characters that are used for passcode **ADD MORE LATER**
-
+static const char characters[] = "qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM1234567890`~!@#$%^&*()_+{}|\;:,<.>/?";
 int StringLength = sizeof(characters) - 1;
 
 char GenRand() {
@@ -23,8 +21,6 @@ int main(){
 
 	std::cout << "Enter the number of digits for your password" << std::endl;
 	std::cin >> length;
-
-
 
 	std::string Str;
 	for (unsigned int i = 0; i < length; ++i)
