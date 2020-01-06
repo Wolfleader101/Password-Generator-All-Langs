@@ -2,6 +2,7 @@ const Characters = "qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM12345678
 const StringLength = Characters.length - 1;
 
 function GenRandom() {
+    Math.random = () => {return window.crypto.getRandomValues(new Uint32Array(1))[0] / 4294967296; };
     return Characters[Math.floor((Math.random() * StringLength) + 1)];
 }
 
